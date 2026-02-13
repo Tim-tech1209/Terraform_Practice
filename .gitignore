@@ -1,0 +1,16 @@
+# 忽略 Terraform 的本地插件目录
+.terraform/
+
+# 忽略状态文件（包含你基础设施的敏感信息和明文密码）
+*.tfstate
+*.tfstate.*
+
+# 忽略变量赋值文件（如果你在里面写了秘钥）
+*.tfvars
+*.tfvars.json
+
+# 忽略本地环境变量文件
+.env
+
+# 忽略操作日志
+errored.tfstate
